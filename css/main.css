@@ -8,11 +8,20 @@ body {
 }
 h1, h2
 {
+	border: 0;
 	font-weight:normal;
 	color:#111;
 	margin:0;
 	padding:0;
-	border:0;
+}
+h1 img, h2 img
+{
+	vertical-align: middle;
+	border: 2px solid black;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-khtml-border-radius: 30px;
+	-webkit-border-radius: 30px;""
 }
 .clear
 {
