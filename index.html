@@ -38,7 +38,11 @@
 			</div>
 
 			<nav id="menu">
-				<ul>
+				<ul id="viewAllMenu">
+					<li class="social" id="toggleMenu"><a><i class="icon-double-angle-down"></i></a></li>
+				</ul>
+
+				<ul id="menuItems">
 <!--
 					<li><a href="/blog">Blog</a></li>
 					<li><a href="/cv">Resume</a></li>
@@ -99,5 +103,14 @@ On top of his PHP skills is a deep knowledge and understanding of Linux based sy
 	</footer>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script>
+		var menuItems = $('#menuItems');
+
+		$('#toggleMenu').click(function(e){
+			menuItems.toggle();
+
+			e.preventDefault();
+		});
+	</script>
 </body>
 </html>

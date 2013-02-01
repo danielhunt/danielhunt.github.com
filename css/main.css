@@ -27,19 +27,34 @@ header { overflow: auto; color: #444; background: #fff; height: 3em; line-height
 header .logo { font-size: 1em; color: #444; text-transform: uppercase; display: block; }
 header .logo a { color: #444; float: left; }
 #menu { float: right; border-right: 1px solid rgba(128,128,128,0.2); }
-#menu li { float: left; border-left: 1px solid rgba(128,128,128,0.2); }
 
 nav { position: relative; }
 nav a { font-size: 1em; padding: 0em 1em; display: inline-block; color: #444; text-transform: uppercase; }
 nav a:hover { background: rgba(128,128,128,0.1); }
 
+#viewAllMenu {
+	display: none;
+}
 
 @media (max-width: 800px) { 
 	#name {
 		display: none;
 	}
+	#viewAllMenu {
+		display: block;
+	}
+	header {height: auto;}
+	#menuItems {
+		display: none;
+	}
+	.wrapper {
+		width: 100%;
+	}
 }
 
+@media (min-width: 800px) { 
+	#menu li { float: left; border-left: 1px solid rgba(128,128,128,0.2); }
+}
 
 header .logo .profile_pic {
 	vertical-align: middle;
