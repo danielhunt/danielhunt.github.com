@@ -34,6 +34,12 @@ nav a { font-size: 1em; padding: 0em 1em; display: inline-block; color: #444; te
 nav a:hover { background: rgba(128,128,128,0.1); }
 
 
+@media (max-width: 800px) { 
+	#name {
+		display: none;
+	}
+}
+
 
 header .logo .profile_pic {
 	vertical-align: middle;
@@ -78,7 +84,7 @@ h2 {
 }
 
 .subheading {
-	width:100%;
+	width:auto;
 	padding:15px 25px;
 	font-size:18px;
 	line-height:32px;
@@ -94,6 +100,7 @@ h2 {
 
 @media (min-width: 1024px) { 
 	.subheading {
+		width:100%;
 		padding:50px 100px;
 		margin-left:-100px;
 	}
