@@ -141,23 +141,19 @@ hr {
 
 .columns {
 	overflow:hidden;
+}
+
+.columns .col {
 	padding-bottom: 20px;
-}
-
-.left_column {
+	padding-left: 3%;
 	float:left;
-	width:375px
-}
-
-.right_column {
-	float:right;
-	width:375px
+	width:47%;
+	min-width:375px
 }
 
 footer {
 	font-size: 75%;
-	margin:20px
-	auto
+	margin:20px auto;
 }
 
 footer hr {
